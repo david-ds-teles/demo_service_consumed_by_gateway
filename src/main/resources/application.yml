@@ -1,6 +1,9 @@
 spring:
   application:
     name: demo-account
+  security:
+    secretKey: 6WGfy+zHxnaLCSYEtbok2NqyezDDZg0aMMcifl6rNKuSi5/xXMvJCBuiPjiT61iaRoWMzkC16Jv881Zpa5GRJCyRaF1hZzBRU7EDaEDMJpqhXskf8Vi2siskAyV9gzKDdjJEMrCk+qT5JO+EdVOM85jhQm5DNMvjP5O36cZZ+D7Wurh/1c9/5uObrrnN30zBechQ/dcqDz9j5LkojXzlNZJC+WfSyyLElOH6Vw==
+    permitAll: "${PERMIT_ALL_WHITELIST: /actuator/**, /api/account/login, /api/account/hello}"
 
 server:
   port: 8090
